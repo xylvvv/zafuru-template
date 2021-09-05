@@ -1,8 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Welcome from './pages/welcome';
 
-const App = () => (
+const App: FC = () => (
   <BrowserRouter>
     <Switch>
       <Route path="/" exact component={Welcome} />

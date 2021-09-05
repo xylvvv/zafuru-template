@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Welcome = () => {
+const Welcome: FC = () => {
   return <div>welcome</div>;
 };
 
