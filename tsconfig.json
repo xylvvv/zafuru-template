@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".", // this must be specified if "paths" is specified.
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    // Ensure that Babel can safely transpile files in the TypeScript project
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "checkJs": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es5",
+    "skipLibCheck": true,
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
