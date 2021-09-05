@@ -17,6 +17,11 @@ module.exports = {
     // 2.注册eslint-plugin-prettier插件，使ESLint检测prettier样式问题
     'plugin:prettier/recommended',
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
     // 'react/jsx-max-props-per-line': [1, { maximum: 1, when: 'multiline' }],
   },

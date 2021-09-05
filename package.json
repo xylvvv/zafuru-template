@@ -6,8 +6,9 @@
     "start": "zafuru start",
     "build": "zafuru build",
     "lint:ts": "tsc",
-    "lint:es": "eslint --cache --ext tsx,ts,js",
-    "lint": "npm run lint:ts && npm run lint:es"
+    "lint:es": "eslint --fix --cache --ext tsx,ts,jsx,js .",
+    "lint": "npm run lint:ts && npm run lint:es",
+    "prepare": "husky install"
   },
   "license": "ISC",
   "devDependencies": {
@@ -55,18 +56,5 @@
     "not ie < 11",
     "not dead"
   ],
-  "sideEffects": false,
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -e $GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": "npm run lint",
-    "**/*.{js,jsx,ts,tsx,less,md,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  }
+  "sideEffects": false
 }
