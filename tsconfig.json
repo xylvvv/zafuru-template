@@ -22,8 +22,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "target": "es5",
     "skipLibCheck": true,
+    "experimentalDecorators": true
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }
